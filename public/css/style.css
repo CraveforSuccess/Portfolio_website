@@ -20,8 +20,9 @@ nav img {
     animation: ColorChange 3s infinite;
 
 }
-.navbar-nav a:hover{
-   color: #fff;
+
+.navbar-nav a:hover {
+    color: #fff;
 }
 
 
@@ -149,7 +150,7 @@ nav img {
     border-radius: 10px;
     box-shadow: 2px 5px black;
     background-color: #fff;
-    margin: 1rem 0px;
+    /* margin: 1rem 0px; */
 }
 
 #projectBoxes h4 {
@@ -205,7 +206,8 @@ nav img {
     flex-direction: column;
     text-align: center;
 }
-form{
+
+form {
     display: flex;
     flex-direction: column;
 }
@@ -233,6 +235,52 @@ form{
 }
 
 /* Projects */
+.proBox {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 5rem;
+}
+
+.projectContainer {
+    background: url('/css/projectbg(1).jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 1rem 0;
+}
+
+.projectContainer h1{
+    text-align: center;
+    color: #fff;
+    font-family: cursive;
+}
+
+.dropdown-content {
+    display: none;
+    width: 15rem;
+    font-family: cursive;
+    height: auto;
+    background-color: black;
+    color: #fff;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.dropdown-content h4{
+    background-color: #fff;
+    color: black;
+    border-radius: 0.5rem;
+    width: fit-content;
+    margin: auto;
+    margin-bottom: 0.3rem;
+
+    
+}
+.proBox:hover .dropdown-content {
+    display: block;
+}
+
+
+
 
 
 
@@ -292,28 +340,46 @@ form{
 }
 
 @media screen and (max-width:850px) {
-    .briefIntro{
+    .briefIntro {
         flex-direction: column;
     }
-    .projects{
+
+    .projects {
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
 }
+
 @media screen and (max-width:525px) {
-    .footer{
+    .footer {
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
+
     nav img {
         max-width: 3rem;
     }
-    .name h1{
+
+    .name h1 {
         color: #fff;
     }
-    .name h2{
+
+    .name h2 {
         color: #fff;
+    }
+}
+
+@media screen and (max-width:435px) {
+    .projectContainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: url('/css/ProjectBg.jpg');
+    }
+    .proBox{
+        margin: 1rem;
     }
 }

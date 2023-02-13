@@ -62,6 +62,11 @@ app.post('/',(req,res)=>{
     }
    })
 
+});
+
+// Project section
+app.get("/projects",(req,res)=>{
+    res.render('project.ejs')
 })
 
 app.listen(process.env.PORT || 3000,()=>{

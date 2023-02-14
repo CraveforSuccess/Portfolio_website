@@ -9,20 +9,20 @@ nav img {
     max-width: 4rem;
 }
 
-.navbar-nav {
+/* .navbar-nav {
     margin-left: auto;
-}
+} */
 
 .navbar-nav a {
     font-size: 1.2rem;
-    color: white;
+    color: black;
     font-weight: bolder;
-    animation: ColorChange 3s infinite;
+   
 
 }
 
 .navbar-nav a:hover {
-    color: #fff;
+   color: blue;
 }
 
 
@@ -150,7 +150,7 @@ nav img {
     border-radius: 10px;
     box-shadow: 2px 5px black;
     background-color: #fff;
-     margin: 1rem 0px; 
+    margin: 1rem 1rem;
 }
 
 #projectBoxes h4 {
@@ -237,25 +237,28 @@ form {
 /* Projects */
 .proBox {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     margin: 1rem 5rem;
+   
 }
 
 .projectContainer {
-    background: url('/css/projectbg(1).jpg');
+    background: url('https://images.unsplash.com/photo-1600172454132-ada7faa101cf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80');
     background-repeat: no-repeat;
     background-size: cover;
     padding: 1rem 0;
 }
 
-.projectContainer h1{
+
+.projectContainer h1 {
     text-align: center;
-    color: #fff;
-    font-family: cursive;
+    color: black;
+    font-weight: bolder;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .dropdown-content {
-    display: none;
+    display: block;
     width: 15rem;
     font-family: cursive;
     height: auto;
@@ -263,9 +266,14 @@ form {
     color: #fff;
     padding: 1rem;
     border-radius: 1rem;
+   margin-left: 1rem;
+}
+.dropdown-content p{
+    font-size: 1.1rem;
+    text-align: justify;
 }
 
-.dropdown-content h4{
+.dropdown-content h4 {
     background-color: #fff;
     color: black;
     border-radius: 0.5rem;
@@ -273,11 +281,9 @@ form {
     margin: auto;
     margin-bottom: 0.3rem;
 
-    
+
 }
-.proBox:hover .dropdown-content {
-    display: block;
-}
+
 
 
 
@@ -329,12 +335,12 @@ form {
         font-size: 1.2rem;
         text-align: center;
         font-weight: bolder;
-        background-color: black;
-        margin: 1rem auto;
+        color: black;
         width: fit-content;
-        border-radius: 1rem;
         padding: 2%;
         align-items: center;
+        text-align: center;
+        font-weight: 500;
 
     }
 }
@@ -371,15 +377,32 @@ form {
     }
 }
 
-@media screen and (max-width:500px) {
-    .projectContainer{
+@media screen and (max-width:435px) {
+    .projectContainer {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         background: url('/css/ProjectBg.jpg');
+
     }
-    .proBox{
+
+    #projectBoxes{
+        margin: 1rem auto;
+    }
+
+    .proBox {
         margin: 1rem;
+    }
+
+   
+
+  .projectContainer h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #fff;
+    
+  }
+    .dropdown-content{
+        margin: auto;
     }
 }

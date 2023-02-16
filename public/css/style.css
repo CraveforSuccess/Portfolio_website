@@ -17,12 +17,12 @@ nav img {
     font-size: 1.2rem;
     color: black;
     font-weight: bolder;
-   
+
 
 }
 
 .navbar-nav a:hover {
-   color: blue;
+    color: blue;
 }
 
 
@@ -239,7 +239,7 @@ form {
     display: flex;
     flex-direction: row;
     margin: 1rem 5rem;
-   
+
 }
 
 .projectContainer {
@@ -266,9 +266,10 @@ form {
     color: #fff;
     padding: 1rem;
     border-radius: 1rem;
-   margin-left: 1rem;
+    margin-left: 1rem;
 }
-.dropdown-content p{
+
+.dropdown-content p {
     font-size: 1.1rem;
     text-align: justify;
 }
@@ -280,10 +281,54 @@ form {
     width: fit-content;
     margin: auto;
     margin-bottom: 0.3rem;
-
-
 }
 
+
+/* about us */
+.AboutusMain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   background: url('/css/AboutBg 1.jpg');
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+
+.AboutusMain p {
+    text-align: center;
+    padding: 2rem;
+    font-family: cursive;
+    font-size: 1.5rem;
+}
+
+.AboutusMain img {
+    max-width: 100%;
+}
+
+.AboutusBtn {
+    padding: 0.2rem;
+    font-size: larger;
+    font-weight: bolder;
+    background-color: black;
+    border-radius: 0.5rem;
+    color: #fff;
+    text-align: center;
+    margin:  auto;
+    border: 2px solid black;
+}
+
+.AboutusMain a {
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+}
+
+.AboutusBtn:hover {
+
+    background-color: #fff;
+    color: black;
+
+}
 
 
 
@@ -343,6 +388,15 @@ form {
         font-weight: 500;
 
     }
+
+    .AboutusMain {
+        flex-direction: column;
+    }
+
+    .AboutusMain p {
+        font-size: 1rem;
+        text-align: center;
+    }
 }
 
 @media screen and (max-width:850px) {
@@ -387,7 +441,7 @@ form {
 
     }
 
-    #projectBoxes{
+    #projectBoxes {
         margin: 1rem auto;
     }
 
@@ -395,14 +449,15 @@ form {
         margin: 1rem;
     }
 
-   
 
-  .projectContainer h1{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: #fff;
-    
-  }
-    .dropdown-content{
+
+    .projectContainer h1 {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: #fff;
+
+    }
+
+    .dropdown-content {
         margin: auto;
     }
 }

@@ -73,6 +73,10 @@ app.get('/About',(req,res)=>{
     res.render('About');
 })
 
+app.get('/contact',(req,res)=>{
+    res.render('contact')
+})
+
 app.listen(process.env.PORT || 3000,()=>{
     console.log("Running server")
 })
